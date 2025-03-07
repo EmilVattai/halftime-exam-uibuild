@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+body {
+  background-color: #C0EBF9;
+  font-family: "Poppins", sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: #467745;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  min-height: 500px;
+}
+
+h1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  text-align: center;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.input {
+  border: 0;
+  padding: 10px 20px;
+}
+
+input[type="text"] {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  width: 100%;
+  max-width: 600px;
+  height: 64px;
+}
+
+input[type="checkbox"] {
+  padding: 10px 20px;
+}
+
+.checkbox-container {
+  display: flex;
+  gap: 10px;
+  width: 85%;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  max-width: 600px;
+}
+
+input::placeholder {
+  color: #4677458a;
+}
+
+textarea {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  width: 100%;
+  max-width: 600px;
+  height: 120px;
+}
+
+textarea::placeholder {
+  color: #4677458a;
+}
+
+button {
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #467745;
+  color: #C0EBF9;
+  width: 100%;
+  max-width: 280px;
+  height: 80px;
+}
+
+@media screen and (max-width: 640px){
+  h1 { 
+    text-align: left;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 40px);
+  }
+
+  textarea {
+    width: calc(100% - 40px);
+  }
+
+  .checkbox-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  button {
+    margin: 0 20px;
+  }
+}
